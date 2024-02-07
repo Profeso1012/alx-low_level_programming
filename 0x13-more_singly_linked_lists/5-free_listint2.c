@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * free_listint - prints elements of a listint_t list.
- * @head: pointer to first node of list.
- * Return: no of nodes.
+ * free_listint2 - prints elements of a listint_t list.
+ * @head: pointer to head of first node of list.
+ * Return: always success
  */
 void free_listint2(listint_t **head)
 {
@@ -13,7 +13,7 @@ void free_listint2(listint_t **head)
 		return;
 	while (*head)
 	{
-		last = *head->next;
+		last = (*head)->next;
 		free(*head);
 		*head = last;
 	}
