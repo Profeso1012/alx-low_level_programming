@@ -1,5 +1,5 @@
 #include "lists.h"
-                                                  /**
+/**
  * delete_dnodeint_at_index - deletes a node
  * @head: head of the list
  * @index: index of the new node
